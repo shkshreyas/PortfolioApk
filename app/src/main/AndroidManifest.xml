@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ShreyasPortfolio"
         tools:targetApi="31">
         <activity
+            android:name=".AchieveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkActivity"
+            android:exported="false" />
+        <activity
             android:name=".EduActivity"
             android:exported="false" />
         <activity

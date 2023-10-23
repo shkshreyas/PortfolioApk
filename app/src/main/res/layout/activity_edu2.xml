@@ -12,5 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_gravity="center"
-        android:text="Educational Details" />
+        android:text="  Educational Details" />
+
 </LinearLayout>

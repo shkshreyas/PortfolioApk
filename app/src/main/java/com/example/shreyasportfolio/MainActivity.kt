@@ -21,5 +21,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+        val workActivity=findViewById<Button>(R.id.button3)
+        workActivity.setOnClickListener {
+            intent=Intent(this,WorkActivity::class.java)
+            startActivity(intent)
+
+        }
+        val achieveActivity=findViewById<Button>(R.id.button4)
+        achieveActivity.setOnClickListener {
+            intent=Intent(this,AchieveActivity::class.java)
+            startActivity(intent)
+
+        }
     }
 }
