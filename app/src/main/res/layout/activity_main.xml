@@ -25,12 +25,13 @@
     <TextView
         android:id="@+id/tvName"
         android:layout_width="match_parent"
-        android:layout_height="53dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:padding="10dp"
+        android:layout_margin="6dp"
+        android:padding="8dp"
         android:text="Shreyas Kumar"
-        android:textSize="25dp"
+        android:fontFamily="sans-serif"
+        android:textSize="30dp"
         android:textStyle="bold" />
 
     <TextView
@@ -38,11 +39,11 @@
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_gravity="center"
-        android:layout_margin="10dp"
+        android:layout_margin="6dp"
         android:fontFamily="sans-serif"
         android:padding="10dp"
         android:text="Problem Solver"
-        android:textSize="22dp"
+        android:textSize="19dp"
         android:textStyle="bold" />
     <LinearLayout
         android:layout_width="match_parent"
