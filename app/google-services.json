@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "56168021331",
-    "project_id": "shreyas-portfolio-analytics",
-    "storage_bucket": "shreyas-portfolio-analytics.appspot.com"
+    "project_number": "163557827482",
+    "firebase_url": "https://portfolio-apk-default-rtdb.firebaseio.com",
+    "project_id": "portfolio-apk",
+    "storage_bucket": "portfolio-apk.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:56168021331:android:6be843c230bec23ad835a6",
+        "mobilesdk_app_id": "1:163557827482:android:1ab373073afaf32e395023",
         "android_client_info": {
           "package_name": "com.example.shreyasportfolio"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAK1q5GD08D5DI411jXzx9s5uoDQQaELWk"
+          "current_key": "AIzaSyDwlKMjnsXsGH_ypzMAHoAn15iBruSNQAs"
         }
       ],
       "services": {

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AppInsightsSettings">
+    <option name="selectedTabId" value="Firebase Crashlytics" />
     <option name="tabSettings">
       <map>
         <entry key="Firebase Crashlytics">
@@ -9,9 +10,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.example.shreyasportfolio" />
-                  <option name="mobileSdkAppId" value="1:56168021331:android:6be843c230bec23ad835a6" />
-                  <option name="projectId" value="shreyas-portfolio-analytics" />
-                  <option name="projectNumber" value="56168021331" />
+                  <option name="mobileSdkAppId" value="1:163557827482:android:1ab373073afaf32e395023" />
+                  <option name="projectId" value="portfolio-apk" />
+                  <option name="projectNumber" value="163557827482" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
