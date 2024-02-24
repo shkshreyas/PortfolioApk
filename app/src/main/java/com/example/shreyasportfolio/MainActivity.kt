@@ -19,11 +19,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val linkedin=findViewById<Button>(R.id.linkedin)
+        val github=findViewById<ImageView>(R.id.github)
+        github.setOnClickListener {
+            gotoUrl("https://www.github.com/shkshreyas")
+        }
+        val linkedin=findViewById<ImageView>(R.id.linkedin)
         linkedin.setOnClickListener {
             gotoUrl("https://www.linkedin.com/in/shkshreyas")
         }
-        val twitter=findViewById<Button>(R.id.twitter)
+        val twitter=findViewById<ImageView>(R.id.twitter)
         twitter.setOnClickListener {
             gotoUrl("https://www.twitter.com/shkshreyas")
         }
