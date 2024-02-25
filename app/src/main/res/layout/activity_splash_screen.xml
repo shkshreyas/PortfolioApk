@@ -5,33 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img_1"
-
     tools:context=".SplashScreen">
-    <de.hdodenhof.circleimageview.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp"
+
+    <pl.droidsonroids.gif.GifImageView
         android:id="@+id/imageView"
-        android:layout_width="315dp"
-        android:layout_height="272dp"
-        android:src="@drawable/img"
-        app:civ_border_width="2dp"
-        app:civ_border_color="#FF000000"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:elevation="4dp"
+        android:src="@drawable/shksplash"
+        android:layout_centerHorizontal="true"/>
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Shreyas Kumar"
         android:textColor="@color/white"
+        android:fontFamily="@font/comfortaabold"
         android:textSize="50dp"
        android:textAlignment="center"
         android:gravity="center"
         android:layout_below="@+id/imageView"
         android:layout_marginTop="50dp" />
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>
