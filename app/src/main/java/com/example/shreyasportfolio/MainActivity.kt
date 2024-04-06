@@ -1,5 +1,6 @@
 package com.example.shreyasportfolio
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -13,28 +14,33 @@ import com.google.firebase.Firebase
 import java.lang.ref.PhantomReference
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-
 class MainActivity : AppCompatActivity() {
     lateinit var databaseReference: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val github=findViewById<ImageView>(R.id.github)
-        github.setOnClickListener {
-            gotoUrl("https://www.github.com/shkshreyas")
+        var xlink: String = "https://twitter.com/shkshreyas"
+        var linkedinlink: String = "https://www.linkedin.com/in/shkshreyas"
+        var gitlink: String = "https://www.github.com/shkshreyas"
+        val mainline = findViewById<TextView>(R.id.tvDesignation)
+        databaseReference = FirebaseDatabase.getInstance().getReference("portfolio")
+        databaseReference.get().addOnSuccessListener { dataSnapshot ->
+            mainline.text = dataSnapshot.child("mainline").value?.toString()
+            xlink = dataSnapshot.child("x").value?.toString() ?: ""
+            linkedinlink = dataSnapshot.child("linkedin").value?.toString() ?: ""
+            gitlink = dataSnapshot.child("github").value?.toString() ?: ""
+        }
+        val twitter = findViewById<ImageView>(R.id.twitter)
+        twitter.setOnClickListener {
+            gotoUrl(xlink)
         }
         val linkedin=findViewById<ImageView>(R.id.linkedin)
         linkedin.setOnClickListener {
-            gotoUrl("https://www.linkedin.com/in/shkshreyas")
+            gotoUrl(linkedinlink)
         }
-        val twitter=findViewById<ImageView>(R.id.twitter)
-        twitter.setOnClickListener {
-            gotoUrl("https://www.twitter.com/shkshreyas")
-        }
-        val mainline = findViewById<TextView>(R.id.tvDesignation)
-        databaseReference = FirebaseDatabase.getInstance().getReference("portfolio")
-        databaseReference.get().addOnSuccessListener {
-            mainline.text = (it.child("mainline").value).toString()
+        val github=findViewById<ImageView>(R.id.github)
+        github.setOnClickListener {
+            gotoUrl(gitlink)
         }
         val buttonSkills=findViewById<Button>(R.id.btnskills)
         buttonSkills.setOnClickListener {
